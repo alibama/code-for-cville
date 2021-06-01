@@ -5,6 +5,7 @@ import sweetviz as sv
 from streamlit_pandas_profiling import st_profile_report
 import codecs
 import streamlit.components.v1 as components
+from pandas_profiling import ProfileReport 
 
 def st_display_sweetviz(report_html,width=1000,height=500):
 	report_file = codecs.open(report_html,'r')
